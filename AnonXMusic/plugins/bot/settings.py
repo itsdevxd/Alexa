@@ -97,16 +97,16 @@ async def support(client, CallbackQuery, _):
             [
                 [
                     InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", url="
+                        text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐺𝑐", url="
                     ),
                     InlineKeyboardButton(
-                        text="ᴄʜᴀɴɴᴇʟ", url="
+                        text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐶ℎ𝑎𝑛𝑛𝑒𝑙", url="
                     ),
 
                 ],
                 [
                     InlineKeyboardButton(
-                        text="Cʜᴀᴛᴛɪɴɢ Gᴄ", url=""
+                        text="𝐶ℎ𝑎𝑡𝑡𝑖𝑛𝑔 𝐺𝑐", url=""
                     ),           
                     InlineKeyboardButton(
                         text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
