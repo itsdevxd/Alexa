@@ -94,7 +94,7 @@ async def support(client, CallbackQuery, _):
     await callback_query.edit_message_media(
         media=InputMediaVideo(
             "https://ar-hosting.pages.dev/1753034397337.mp4",
-            has_spoiler=True
+            has_spoiler=True,
             caption="𝘏𝘦𝘳𝘦 𝘈𝘳𝘦 𝘚𝘰𝘮𝘦 𝘐𝘮𝘱𝘰𝘳𝘵𝘢𝘯𝘵 𝘓𝘪𝘯𝘬𝘴." 
         ),
           reply_markup=InlineKeyboardMarkup(
