@@ -101,17 +101,13 @@ async def support(client, CallbackQuery, _):
                     InlineKeyboardButton(
                         text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐶ℎ𝑎𝑛𝑛𝑒𝑙", url="https://t.me/SiyaBotz"
                     ),
-
-                ],
-                [
                     InlineKeyboardButton(
                         text="𝐶ℎ𝑎𝑡𝑡𝑖𝑛𝑔 𝐺𝑐", url="https://t.me/+IZG7Nyw2Y0diMWE1"
                     ),           
                     InlineKeyboardButton(
                         text="𝖡𝖺𝖼𝗄", callback_data=f"settingsback_helper"
-                    )
-                ],
-    )
+                    ),
+         )
 
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
@@ -120,7 +116,7 @@ async def gib_repo_callback(_, callback_query):
             has_spoiler=False, 
             caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ > 💗🫀🌾",
             reply_markup=InlineKeyboardButton(text="𝖡𝖺𝖼𝗄", callback_data="settingsback_helper"),
-    )
+         )
     
 @app.on_callback_query(
     filters.regex(
