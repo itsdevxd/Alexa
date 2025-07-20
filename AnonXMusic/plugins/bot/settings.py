@@ -91,9 +91,13 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
 @app.on_callback_query(filters.regex("dil_spy") & ~BANNED_USERS)
 @languageCB
 async def support(client, CallbackQuery, _):
-    await CallbackQuery.edit_message_text(
-        text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
-        reply_markup=InlineKeyboardMarkup(
+    await callback_query.edit_message_media(
+        media=InputMediaVideo(
+            "",
+            has_spoiler=True
+            caption="𝘏𝘦𝘳𝘦 𝘈𝘳𝘦 𝘚𝘰𝘮𝘦 𝘐𝘮𝘱𝘰𝘳𝘵𝘢𝘯𝘵 𝘓𝘪𝘯𝘬𝘴." 
+        ),
+          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -120,7 +124,7 @@ async def support(client, CallbackQuery, _):
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
         media=InputMediaVideo(
-            "https://files.catbox.moe/tt3km7.mp4", 
+           "https://files.catbox.moe/tt3km7.mp4", 
             has_spoiler=False, 
             caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ > 💗🫀🌾"
         ),
