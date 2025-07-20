@@ -1,4 +1,6 @@
-from pyrogram.types import InlineKeyboardButton
+from typing import Union
+
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
 from AnonXMusic import app
