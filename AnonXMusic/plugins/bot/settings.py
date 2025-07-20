@@ -88,6 +88,34 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
+@app.on_callback_query(filters.regex("dil_spy") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
+                    ),
+
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="", user_id=config.OWNER_ID
+                    ),           
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    )
+                ],
+            ]
+        ),
+    )
+
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
