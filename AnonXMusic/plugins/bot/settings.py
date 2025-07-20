@@ -106,7 +106,7 @@ async def support(client, CallbackQuery, _):
                     InlineKeyboardButton(
                         text="𝖡𝖺𝖼𝗄", callback_data=f"settingsback_helper"
                     ),
-    )
+    
 
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
@@ -114,7 +114,7 @@ async def gib_repo_callback(_, callback_query):
             video="https://files.catbox.moe/tt3km7.mp4",
             caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ > 💗🫀🌾",
             reply_markup=InlineKeyboardButton(text="𝖡𝖺𝖼𝗄", callback_data="settingsback_helper"),
-    )
+    
     
 @app.on_callback_query(
     filters.regex(
