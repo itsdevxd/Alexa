@@ -88,7 +88,23 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
-
+@app.on_callback_query(filters.regex("gib_source"))
+async def gib_repo_callback(_, callback_query):
+    await callback_query.edit_message_media(
+        media=InputMediaVideo(
+            "https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", 
+            has_spoiler=True, 
+            caption="ʟᴜɴᴅ ʟᴇʟᴇ ᴍᴇʀᴀ ʀᴇᴘᴏ ᴋʏᴀ ᴋᴀʀᴇɢᴀ, ʟᴇɢᴀ ᴋʏᴀ ʙʜᴏsᴀᴅɪᴋᴇ"
+        ),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingsback_helper"),
+                ]
+            ]
+        ),
+    )
+    
 @app.on_callback_query(
     filters.regex(
         pattern=r"^(SEARCHANSWER|PLAYMODEANSWER|PLAYTYPEANSWER|AUTHANSWER|ANSWERVOMODE|VOTEANSWER|PM|AU|VM)$"
