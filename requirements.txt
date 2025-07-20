@@ -24,3 +24,8 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
+azapi==3.0.8
+ntgcalls==2.0.5
+Kurigram==2.1.35
+pytgcrypto==1.2.11
+uvloop; sys_platform != "win32"
