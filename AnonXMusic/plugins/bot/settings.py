@@ -95,10 +95,7 @@ async def support(client, CallbackQuery, _):
         video="https://ar-hosting.pages.dev/1753034397337.mp4",
             has_spoiler=True,
             caption="𝘏𝘦𝘳𝘦 𝘈𝘳𝘦 𝘚𝘰𝘮𝘦 𝘐𝘮𝘱𝘰𝘳𝘵𝘢𝘯𝘵 𝘓𝘪𝘯𝘬𝘴.",
-            reply_markup=InlineKeyboardMarkup(buttons),
-    )
-                [
-                    InlineKeyboardButton(
+            reply_markup=InlineKeyboardButton(
                         text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 𝐺𝑐", url="https://t.me/xscnox"
                     ),
                     InlineKeyboardButton(
@@ -122,11 +119,7 @@ async def gib_repo_callback(_, callback_query):
         video="https://files.catbox.moe/tt3km7.mp4", 
             has_spoiler=False, 
             caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ > 💗🫀🌾",
-            reply_markup=InlineKeyboardMarkup(buttons),
-        )
-                [
-                    InlineKeyboardButton(text="𝖡𝖺𝖼𝗄", callback_data="settingsback_helper"),
-                ]
+            reply_markup=InlineKeyboardButton(text="𝖡𝖺𝖼𝗄", callback_data="settingsback_helper"),
     )
     
 @app.on_callback_query(
