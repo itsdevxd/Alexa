@@ -88,7 +88,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
-@app.on_callback_query(filters.regex("dil_spy") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("unnati") & ~BANNED_USERS)
 @languageCB
 async def support(client, CallbackQuery, _):
     await callback_query.edit_message_media(
@@ -113,7 +113,7 @@ async def support(client, CallbackQuery, _):
                         text="𝐶ℎ𝑎𝑡𝑡𝑖𝑛𝑔 𝐺𝑐", url="https://t.me/+IZG7Nyw2Y0diMWE1"
                     ),           
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                        text="𝖡𝖺𝖼𝗄", callback_data=f"settingsback_helper"
                     )
                 ],
             ]
@@ -131,7 +131,7 @@ async def gib_repo_callback(_, callback_query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingsback_helper"),
+                    InlineKeyboardButton(text="𝖡𝖺𝖼𝗄", callback_data="settingsback_helper"),
                 ]
             ]
         ),
