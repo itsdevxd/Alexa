@@ -88,4 +88,7 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_14, reply_markup=keyboard)
     elif cb == "hb15":
         await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
+    elif cb == "ud15":
+        await  message.reply_photo(
+                    photo="https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg", reply_markup=keyboard)
     
