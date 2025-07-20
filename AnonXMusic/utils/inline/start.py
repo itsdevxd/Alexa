@@ -32,7 +32,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHAT),
         ],
         [
-            InlineKeyboardButton(text=_["links"], callback_data="unnati"),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="unnati"),
             InlineKeyboardButton(text=_["S_B_7"], callback_data="gib_source"),
         ],
     ]
