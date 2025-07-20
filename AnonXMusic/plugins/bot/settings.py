@@ -106,7 +106,7 @@ async def support(client, CallbackQuery, _):
                     InlineKeyboardButton(
                         text="𝖡𝖺𝖼𝗄", callback_data=f"settingsback_helper"
                     ),
-    
+    )
 
 @app.on_callback_query(
     filters.regex(
