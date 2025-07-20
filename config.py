@@ -66,6 +66,9 @@ API_URL = getenv("API_URL", "https://tgmusic.fallenapi.fun")
 # API KEY - here
 API_KEY = getenv("API_KEY", "")
 
+# For - downloads
+DOWNLOADS_DIR = "downloads"
+
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
