@@ -1,3 +1,11 @@
+import config
+
+from time import time, strftime, gmtime
+
+from pyrogram import __version__ as pver
+
+from pyrogram.types import InputMediaVideo, InputMediaPhoto
+
 from pyrogram import filters
 
 from pyrogram.enums import ChatType
