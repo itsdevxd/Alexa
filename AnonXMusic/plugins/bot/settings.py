@@ -787,3 +787,11 @@ async def vote_change(client, CallbackQuery, _):
     except MessageNotModified:
 
         return
+
+@app.on_callback_query(filters.regex("gib_source"))
+async def gib_repo_callback(_, callback_query):
+    await callback_query.edit_message_media(
+        media=InputMediaVideo(
+            "https://files.catbox.moe/tt3km7.mp4", 
+            has_spoiler=False, 
+            caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ > 💗🫀🌾",
