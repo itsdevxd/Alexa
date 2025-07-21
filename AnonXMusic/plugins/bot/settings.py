@@ -802,19 +802,28 @@ async def gib_repo_callback(_, callback_query):
 async def support(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(
         text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
-        reply_markup=InlineKeyboardMarkup(buttons),
-        buttons =   [
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
-                    ),
-                    InlineKeyboardButton(
-                        text="ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
-                    ),
-
-                    InlineKeyboardButton(
-                        text="ᴅᴇᴠs", user_id=config.OWNER_ID
-                    ),           
-                    InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"),])
-    
-            
+        reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                        ),
+                        InlineKeyboardButton(
+                            text="ɢɪᴛʜᴜʙ",
+                            url="https://github.com/AnonymousX1025",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="◁", url="https://github.com/AnonymousX1025),
+                    ],
+                ]
+            ),
+    )
