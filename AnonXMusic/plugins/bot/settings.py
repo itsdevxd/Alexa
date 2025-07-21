@@ -822,7 +822,7 @@ async def support(client, CallbackQuery, _):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", url="https://github.com/AnonymousX1025),
+                        InlineKeyboardButton(text="◁", url="https://github.com/AnonymousX1025"),
                     ],
                 ]
             ),
