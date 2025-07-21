@@ -790,11 +790,11 @@ async def vote_change(client, CallbackQuery, _):
 
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
-    await callback_query.edit_message_media(media)
+    await callback_query.edit_message_media(
         media=InputMediaVideo(
             "https://files.catbox.moe/tt3km7.mp4", 
-            caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ 💗🫀🌾",
+            caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ 💗🫀🌾")),
             reply_markup=InlineKeyboardMarkup(button)
-      button = InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="settingsback_helper")),
+      button = InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="settingsback_helper"),
         
       return
