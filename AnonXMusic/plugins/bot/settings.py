@@ -794,4 +794,27 @@ async def gib_repo_callback(_, callback_query):
         media=InputMediaVideo(
             "https://files.catbox.moe/tt3km7.mp4", 
             caption="𝐻𝑎𝑟 𝑘𝑖𝑠𝑖𝑘𝑜 𝑛𝑎ℎ𝑖 𝑚𝑖𝑙𝑡𝑎 𝑦𝑎ℎ𝑎 𝑝𝑦𝑎𝑟 𝑧𝑖𝑛𝑑𝑔𝑖 𝑚𝑒ℎ 💗🫀🌾"))
+
+
+
+@app.on_callback_query(filters.regex("dil_spy") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
+                    ),
+
+                    InlineKeyboardButton(
+                        text="ᴅᴇᴠs", user_id=config.OWNER_ID
+                    ),           
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper",]))
     
+            
