@@ -801,7 +801,7 @@ async def gib_repo_callback(_, callback_query):
 
 @app.on_callback_query(filters.regex("dil_spy") & ~BANNED_USERS)
 @languageCB
-async def support(client, CallbackQuery, _):
+async def addition(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(
         text="𝘏𝘦𝘳𝘦 𝘈𝘳𝘦 𝘚𝘰𝘮𝘦 𝘐𝘮𝘱𝘰𝘳𝘵𝘢𝘯𝘵 𝘓𝘪𝘯𝘬𝘴 🌸",
         reply_markup=InlineKeyboardMarkup(
