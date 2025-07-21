@@ -805,15 +805,15 @@ async def support(client, CallbackQuery, _):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝖼", url="https://t.me/xscnox",
+                            text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url="https://t.me/xscnox",
                         ),
                         InlineKeyboardButton(
-                            text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/SiyaBotz",
+                            text="𝖴𝗉𝖽𝖺𝗍𝖾", url="https://t.me/SiyaBotz",
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="𝖢𝗁𝖺𝗍𝗍𝗂𝗇𝗀 𝖦𝖼", url="https://t.me/+IZG7Nyw2Y0diMWE1",
+                            text="𝖢𝗁𝖺𝗍𝗍𝗂𝗇𝗀", url="https://t.me/+IZG7Nyw2Y0diMWE1",
                         ),
                         InlineKeyboardButton(
                             text="𝖵𝖯𝖲",
