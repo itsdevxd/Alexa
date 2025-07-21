@@ -30,3 +30,5 @@ Kurigram==2.1.35
 pytgcrypto==1.2.11
 uvloop; sys_platform != "win32"
 YouTubeAPI
+numpy
+wget
