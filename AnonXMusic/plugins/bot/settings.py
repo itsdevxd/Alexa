@@ -802,8 +802,8 @@ async def gib_repo_callback(_, callback_query):
 async def support(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(
         text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
-        reply_markup=InlineKeyboardMarkup(
-                 [
+        reply_markup=InlineKeyboardMarkup(buttons),
+        buttons =   [
                     InlineKeyboardButton(
                         text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
                     ),
@@ -815,6 +815,6 @@ async def support(client, CallbackQuery, _):
                         text="ᴅᴇᴠs", user_id=config.OWNER_ID
                     ),           
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"),]))
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"),])
     
             
